@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {}
+    "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {
+    "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj",
         "projectName": "Lab1_Calculator",
-        "projectPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj",
+        "projectPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj",
         "packagesPath": "C:\\Users\\Owenn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\obj\\",
+        "outputPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

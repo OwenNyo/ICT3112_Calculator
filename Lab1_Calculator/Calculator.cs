@@ -151,5 +151,23 @@ namespace Lab1_Calculator
             // interpret: total_N = prevTotal - deleted + added + modified
             checked { return prevTotal - deleted + added + modified; }
         }
+
+        // Lab 4 Magic Number
+        public double GenMagicNum(double input, IFileReader fileReader)
+        {
+            double result = 0;
+            int choice = Convert.ToInt16(input);
+
+            string[] magicStrings = fileReader.Read("MagicNumbers.txt");
+
+            if ((choice >= 0) && (choice < magicStrings.Length))
+            {
+                result = Convert.ToDouble(magicStrings[choice]);
+            }
+            result = (result > 0) ? (2 * result) : (-2 * result);
+            return result;
+        }
+
+
     }
 }

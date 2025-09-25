@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Castle.Core/5.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "coverlet.collector/6.0.0": {
         "type": "package",
         "build": {
@@ -383,6 +399,18 @@
           "build/net8.0/Microsoft.TestPlatform.TestHost.targets": {}
         }
       },
+      "Moq/4.20.72": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1"
+        },
+        "compile": {
+          "lib/net6.0/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Moq.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -439,7 +467,7 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
-      "Reqnroll/3.0.2": {
+      "Reqnroll/3.0.3": {
         "type": "package",
         "dependencies": {
           "Cucumber.CucumberExpressions": "17.1.0",
@@ -467,12 +495,12 @@
           "build/Reqnroll.targets": {}
         }
       },
-      "Reqnroll.NUnit/3.0.2": {
+      "Reqnroll.NUnit/3.0.3": {
         "type": "package",
         "dependencies": {
           "NUnit": "3.13.1",
-          "Reqnroll": "[3.0.2]",
-          "Reqnroll.Tools.MsBuild.Generation": "[3.0.2]"
+          "Reqnroll": "[3.0.3]",
+          "Reqnroll.Tools.MsBuild.Generation": "[3.0.3]"
         },
         "compile": {
           "lib/netstandard2.0/Reqnroll.NUnit.ReqnrollPlugin.dll": {}
@@ -485,10 +513,10 @@
           "build/Reqnroll.NUnit.targets": {}
         }
       },
-      "Reqnroll.Tools.MsBuild.Generation/3.0.2": {
+      "Reqnroll.Tools.MsBuild.Generation/3.0.3": {
         "type": "package",
         "dependencies": {
-          "Reqnroll": "[3.0.2]"
+          "Reqnroll": "[3.0.3]"
         },
         "build": {
           "build/Reqnroll.Tools.MsBuild.Generation.props": {},
@@ -512,6 +540,32 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Diagnostics.EventLog/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          },
+          "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Reflection.Metadata/8.0.0": {
@@ -581,6 +635,7 @@
         "dependencies": {
           "Lab1_Calculator": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
+          "Moq": "4.20.72",
           "NUnit": "3.14.0",
           "NUnit.Analyzers": "3.9.0",
           "NUnit3TestAdapter": "4.5.0",
@@ -596,6 +651,30 @@
     }
   },
   "libraries": {
+    "Castle.Core/5.1.1": {
+      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "type": "package",
+      "path": "castle.core/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.1.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
     "coverlet.collector/6.0.0": {
       "sha512": "tW3lsNS+dAEII6YGUX/VMoJjBS1QvsxqJeqLaJXub08y1FSjasFPtQ4UBUsudE9PNrzLjooClMsPtY2cZLdXpQ==",
       "type": "package",
@@ -1043,6 +1122,23 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "Moq/4.20.72": {
+      "sha512": "EA55cjyNn8eTNWrgrdZJH5QLFp2L43oxl1tlkoYUKIE9pRwL784OWiTXeCV5ApS+AMYEAlt7Fo03A2XfouvHmQ==",
+      "type": "package",
+      "path": "moq/4.20.72",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net462/Moq.dll",
+        "lib/net6.0/Moq.dll",
+        "lib/netstandard2.0/Moq.dll",
+        "lib/netstandard2.1/Moq.dll",
+        "moq.4.20.72.nupkg.sha512",
+        "moq.nuspec",
+        "readme.md"
+      ]
+    },
     "NETStandard.Library/2.0.0": {
       "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
@@ -1273,10 +1369,10 @@
         "nunit_256.png"
       ]
     },
-    "Reqnroll/3.0.2": {
-      "sha512": "EAYiyq6fggMCjkpSgPKgtC8+IjMf1e7Yzg8AOF5E9VbQawy3yAzyVXknm5MDvfhviCws/ucmZtaJ5ltDkbgZug==",
+    "Reqnroll/3.0.3": {
+      "sha512": "k6s0L8giVATYUDU9PPRxAtfKeoWjbIwCUnp5XyDwib0stdA6dNIQgj/Uf6v2e+OdFjvrr7gsZJXWrNtCg/GQ3A==",
       "type": "package",
-      "path": "reqnroll/3.0.2",
+      "path": "reqnroll/3.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1292,14 +1388,14 @@
         "lib/netstandard2.0/Reqnroll.Utils.dll",
         "lib/netstandard2.0/Reqnroll.dll",
         "lib/netstandard2.0/Reqnroll.xml",
-        "reqnroll.3.0.2.nupkg.sha512",
+        "reqnroll.3.0.3.nupkg.sha512",
         "reqnroll.nuspec"
       ]
     },
-    "Reqnroll.NUnit/3.0.2": {
-      "sha512": "YpFLXiBCYsug54EfwWdjBRJO+tPVLCXxPT2jgkH+s9z/Sevbh3PSutJ+q341wglqAoC0QpW8AJKlnNv4UAQ5OA==",
+    "Reqnroll.NUnit/3.0.3": {
+      "sha512": "pLhtXEUXpUdMHeX3PjMlyhUt9YClL2RfozIoWG6yU0dke2Yn+G1cZ74whKlGXbnzltvTEj+YauhlpJBsI2Wpiw==",
       "type": "package",
-      "path": "reqnroll.nunit/3.0.2",
+      "path": "reqnroll.nunit/3.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1311,14 +1407,14 @@
         "build/netstandard2.0/Reqnroll.NUnit.Generator.ReqnrollPlugin.dll",
         "images/reqnroll-icon.png",
         "lib/netstandard2.0/Reqnroll.NUnit.ReqnrollPlugin.dll",
-        "reqnroll.nunit.3.0.2.nupkg.sha512",
+        "reqnroll.nunit.3.0.3.nupkg.sha512",
         "reqnroll.nunit.nuspec"
       ]
     },
-    "Reqnroll.Tools.MsBuild.Generation/3.0.2": {
-      "sha512": "woH/3e11V9a3AbxLxeqSUDm/n+7ek/fIwzvVvnfy+khE1xwhDyUK27m1qIRct0eW4dUMdMjWX33Vm3WtPTfgsw==",
+    "Reqnroll.Tools.MsBuild.Generation/3.0.3": {
+      "sha512": "uDI1BILNTDgjN3K6wBnISjN6/4aO1UPBwtTEAl31b7q9UKAtv/a4FZWdG0bUeSg5A98HHQwGqDmBKSPI7VY85g==",
       "type": "package",
-      "path": "reqnroll.tools.msbuild.generation/3.0.2",
+      "path": "reqnroll.tools.msbuild.generation/3.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1334,7 +1430,7 @@
         "licenses/Cucumber.CucumberExpressions-LICENSE-MIT.txt",
         "licenses/Gherkin-LICENSE-MIT.txt",
         "licenses/SpecFlow.Internal.Json-LICENSE-MIT.txt",
-        "reqnroll.tools.msbuild.generation.3.0.2.nupkg.sha512",
+        "reqnroll.tools.msbuild.generation.3.0.3.nupkg.sha512",
         "reqnroll.tools.msbuild.generation.nuspec",
         "tasks/net462/Cucumber.HtmlFormatter.dll",
         "tasks/net462/Cucumber.Messages.dll",
@@ -1543,6 +1639,37 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Diagnostics.EventLog/6.0.0": {
+      "sha512": "lcyUiXTsETK2ALsZrX+nWuHSIQeazhqPphLfaRxzdGaG93+0kELqpgEHtwWOlQe7+jSFnKwaCAgL4kjeZCQJnw==",
+      "type": "package",
+      "path": "system.diagnostics.eventlog/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.EventLog.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.Diagnostics.EventLog.dll",
+        "lib/net461/System.Diagnostics.EventLog.xml",
+        "lib/net6.0/System.Diagnostics.EventLog.dll",
+        "lib/net6.0/System.Diagnostics.EventLog.xml",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.dll",
+        "lib/netstandard2.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/net6.0/System.Diagnostics.EventLog.xml",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.Messages.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.dll",
+        "runtimes/win/lib/netcoreapp3.1/System.Diagnostics.EventLog.xml",
+        "system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+        "system.diagnostics.eventlog.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Reflection.Metadata/8.0.0": {
       "sha512": "ptvgrFh7PvWI8bcVqG5rsA/weWM09EnthFHR5SCnS6IN+P4mj6rE1lBDC4U8HL9/57htKAqy4KQ3bBj84cfYyQ==",
       "type": "package",
@@ -1704,11 +1831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator.Specs\\Lab1_Calculator.Specs.csproj",
+      "projectUniqueName": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator.Specs\\Lab1_Calculator.Specs.csproj",
       "projectName": "Lab1_Calculator.Specs",
-      "projectPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator.Specs\\Lab1_Calculator.Specs.csproj",
+      "projectPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator.Specs\\Lab1_Calculator.Specs.csproj",
       "packagesPath": "C:\\Users\\Owenn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator.Specs\\obj\\",
+      "outputPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator.Specs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1729,11 +1856,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator.UnitTests\\Lab1_Calculator.UnitTests.csproj": {
-              "projectPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator.UnitTests\\Lab1_Calculator.UnitTests.csproj"
+            "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator.UnitTests\\Lab1_Calculator.UnitTests.csproj": {
+              "projectPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator.UnitTests\\Lab1_Calculator.UnitTests.csproj"
             },
-            "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {
-              "projectPath": "C:\\Users\\Owenn\\Desktop\\University\\ICT3112 - SVV\\Lab1_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj"
+            "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj": {
+              "projectPath": "C:\\Users\\Owenn\\Desktop\\Github\\ICT3112_Calculator\\Lab1_Calculator\\Lab1_Calculator.csproj"
             }
           }
         }

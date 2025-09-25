@@ -6,7 +6,7 @@ using System.Diagnostics;
 using global::System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
-[GeneratedCode("Reqnroll", "3.0.2")]
+[GeneratedCode("Reqnroll", "3.0.3")]
 [global::NUnit.Framework.SetUpFixture]
 public static class Lab1_Calculator_Specs_NUnitAssemblyHooks
 {
