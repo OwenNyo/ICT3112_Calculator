@@ -1,0 +1,14 @@
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\bin\Debug\net8.0\Lab1_Calculator.exe
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\bin\Debug\net8.0\Lab1_Calculator.deps.json
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\bin\Debug\net8.0\Lab1_Calculator.runtimeconfig.json
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\bin\Debug\net8.0\Lab1_Calculator.dll
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\bin\Debug\net8.0\Lab1_Calculator.pdb
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.AssemblyInfoInputs.cache
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.AssemblyInfo.cs
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.dll
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\refint\Lab1_Calculator.dll
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.pdb
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\Lab1_Calculator.genruntimeconfig.cache
+C:\Users\Owenn\Desktop\University\ICT3112 - SVV\Lab1_Calculator\Lab1_Calculator\obj\Debug\net8.0\ref\Lab1_Calculator.dll
