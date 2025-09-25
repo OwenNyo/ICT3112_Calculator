@@ -22,7 +22,6 @@ jobs:
             7.0.x
             6.0.x
 
-      # If your .sln is not at the repo root, set the working-directory below.
       - name: Restore
         run: dotnet restore
 
@@ -32,15 +31,5 @@ jobs:
       - name: NUnit Tests
         run: dotnet test Lab1_Calculator.UnitTests/Lab1_Calculator.UnitTests.csproj --configuration Release --no-build --verbosity normal
 
-      # Optional: collect coverage (needs coverlet.collector in test csproj)
-      # - name: Test with coverage
-      #   run: dotnet test Lab1_Calculator.UnitTests/Lab1_Calculator.UnitTests.csproj --configuration Release --no-build --collect:"XPlat Code Coverage"
-
-      # Optional: upload coverage report artifact (if enabled above)
-      # - name: Upload coverage
-      #   if: always()
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: coverage
-      #     path: |
-      #       **/TestResults/**/coverage.cobertura.xml
+      - name: Reqnroll (BDD) Tests
+        run: dotnet test Lab1_Calculator.Specs/Lab1_Calculator.Specs.csproj --configuration Release --no-build --verbosity normal
